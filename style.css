@@ -80,7 +80,9 @@ html {
 }
 body {
 	background: #fff;
+	
 }
+
 article,
 aside,
 details,
@@ -334,10 +336,43 @@ textarea {
 	vertical-align: top; /* Improves readability and alignment in all browsers */
 	width: 98%;
 }
+/*--------------------------------------------------------------
+HEADER
+--------------------------------------------------------------*/
+.site-branding{
+	color: #fff;
+	margin-left: 20px;
+	float: left;
+	top: 50px;
+	position: absolute;
+
+}
+.site-branding h1 a{
+	font-size: 500%;
+	color: #fff;
+	font-family: arvo, serif;
+	font-weight: 600;
+	letter-spacing: .1;
+
+}
+.site-description{
+	font-family: open-sans-condensed, sans-serif;
+	font-size: 200%;
+	font-weight: 100;
+	margin-top: -20px;
+	padding: 0;
+}
+.site-branding a{
+	text-decoration: none;
+	color: #fff;	
+}
+
+
 
 /*--------------------------------------------------------------
 5.0 Navigation
 --------------------------------------------------------------*/
+
 /*--------------------------------------------------------------
 5.1 Links
 --------------------------------------------------------------*/
@@ -361,19 +396,28 @@ a:active {
 	display: block;
 	float: left;
 	width: 100%;
+	background:  #535351;
+	background: rgba(0, 0, 0, 0.64);
+	padding-left: 41%;
+	padding-bottom: 2.083%;
+	margin-top: 50px;
+	font-family: arvo, serif;
 }
 .main-navigation ul {
 	list-style: none;
-	margin: 0;
+	margin: 2.083%;
 	padding-left: 0;
 }
 .main-navigation li {
 	float: left;
 	position: relative;
+	margin: 20px;
+	
 }
 .main-navigation a {
 	display: block;
 	text-decoration: none;
+	color: #fff;
 }
 .main-navigation ul ul {
 	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
@@ -383,6 +427,8 @@ a:active {
 	position: absolute;
 	top: 1.5em;
 	z-index: 99999;
+	margin-top: 52px;
+	position: center;
 }
 .main-navigation ul ul ul {
 	left: 100%;
@@ -392,8 +438,23 @@ a:active {
 	width: 200px;
 }
 .main-navigation ul ul li {
+	background: #e5e5e5;
+	margin: 0;
+	padding: 10px;
+	text-align: center;
+	display: inline-block;
+	font-size: 90%;
+	border-bottom: #d8d8d8 1px solid;
+
+}
+.main-navigation ul ul li a {
+	color: #000;
+	
 }
 .main-navigation li:hover > a {
+}
+.main-navigation ul ul li:hover > a {
+	background: #898989;
 }
 .main-navigation ul ul :hover > a {
 }
@@ -537,6 +598,9 @@ a:active {
 /*--------------------------------------------------------------
 10.0 Content
 --------------------------------------------------------------*/
+
+
+
 /*--------------------------------------------------------------
 10.1 Posts and pages
 --------------------------------------------------------------*/
@@ -643,3 +707,35 @@ iframe,
 object {
 	max-width: 100%;
 }
+
+/*--------------------------------------------------------------
+footer
+--------------------------------------------------------------*/
+
+.site-footer{
+	width: 100%;
+	background:  #535351;
+	background: rgba(0, 0, 0, 0.64);
+	position:absolute;
+    bottom:0;
+    height: relative;
+
+}
+.site-footer img{
+	opacity: .64;
+	margin: 0;
+	float: left;
+	top: 20px;
+	padding-top: 20px;
+	-webkit-transform: scale(0.7);
+}
+.site-footer h3{
+	float: right;
+	color: #fff;
+	opacity: .64;
+	margin: 2%;
+}
+
+/*--------------------------------------------------------------
+utilities
+--------------------------------------------------------------*/
